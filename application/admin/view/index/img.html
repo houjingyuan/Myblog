@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{include file="public/header"}
+<body>
+<div id="wrapper">
+    {include file="public/nav"}
+    <div id="page-wrapper" style="min-height: 280px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">上传图片</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="img" method="post" enctype="multipart/form-data">
+                    <label for="img">上传图片</label>
+                    <input type="file" name="img" id="img"/>
+                    <input type="submit" class="btn btn-primary" name="sub" value="确认" style="margin-top: 6px;padding: 10px 40px;">
+                </form>
+            </div>
+            <div class="col-lg-12">
+             <img src={$path?$path:""}>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{include file="public/js"}
+</body>
+</html>

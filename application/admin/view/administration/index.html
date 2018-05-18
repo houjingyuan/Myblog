@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{include file="public/header"}
+<script type="text/javascript" src="/static/utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" src="/static/utf8-php/ueditor.all.js"></script>
+<body>
+<div id="wrapper">
+    {include file="public/nav"}
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">发布文章</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+    <div class="row">
+        <!-- /.col-lg-12 -->
+        <form role="form" action="/index.php/admin/Administration/index" method="post">
+            <div class="form-group has-success">
+                <label class="control-label" for="inputSuccess">文章标题</label>
+                <input type="text" class="form-control" id="inputSuccess" name="title">
+            </div>
+            <div class="form-group has-warning">
+                <label class="control-label" for="inputWarning">文章简介</label>
+                <input type="text" class="form-control" id="inputWarning" name="sketchy">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="edit">文章内容</label>
+                <textarea id="edit" name="article"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-info" name="sub" value="提交">
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+{include file="public/js"}
+<script type="text/javascript">
+    var ue = UE.getEditor('edit');
+</script>
+</body>
+</html>

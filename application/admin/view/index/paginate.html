@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{include file="public/header"}
+<body>
+<div id="wrapper">
+   {include file="public/nav"}
+   <div id="page-wrapper" style="min-height: 280px;">
+      <div class="row">
+         <div class="col-lg-12">
+            <h1 class="page-header">设置分页</h1>
+         </div>
+         <!-- /.col-lg-12 -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+         <div class="col-lg-12">
+            <form action="paginate" method="post">
+            <label for="page">设置分页</label>
+            <input type="text" class="form-control" name="paginate" id="page" style="width: 500px;">
+               <p><span>即每页所展示的文章数目</span></p>
+            <input type="submit" class="btn btn-primary" name="sub"  style="margin-top: 6px;padding: 10px 40px;">
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+</div>
+{include file="public/js"}
+</body>
+</html>

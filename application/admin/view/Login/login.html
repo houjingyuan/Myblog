@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{include file="public/header"}
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">博客登录</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" action="LoginCheck" method="post">
+                        <fieldset>
+                            <div class="form-group">
+                                <label>用户名:</label>
+                                <input class="form-control" placeholder="用户账号" name="user" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label>用户密码:</label>
+                                <input class="form-control" placeholder="用户密码" name="password" type="password" value="">
+                            </div>
+                            <div class="form-group">
+                                <label>验证码:</label>
+                                <input class="form-control" placeholder="验证码" name="captcha" type="text" value="">
+                            </div>
+                            <div class="form-group">
+                                <img src="/index.php/admin/login/captcha" onclick="this.src='/index.php/admin/login/captcha?d='+Math.random();"/>
+                </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="remember" type="checkbox" value="记住我">Remember Me
+                                </label>
+                            </div>
+                            <!--Change this to a button or input when using this as a form -->
+                            <div class="form-group">
+                            <input type="submit"  value="登录" name="sub" class="btn btn-lg btn-success btn-block">
+                            </div>
+                            <div class="form-group">
+                            <a href="/public/index.php/admin/register/register"><input class="btn btn-lg btn-success btn-block" type="buttom" value="注册" name="btn"></a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

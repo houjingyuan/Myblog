@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{include file="public/header"}
+<body>
+<div id="wrapper">
+    {include file="public/nav"}
+    <div id="page-wrapper" style="min-height: 280px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">清除缓存</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="cache" method="post">
+                    <p><span>删除您的缓存</span></p>
+                    <input type="submit" class="btn btn-primary" name="cache"  style="margin-top: 6px;padding: 10px 40px;">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{include file="public/js"}
+</body>
+</html>
